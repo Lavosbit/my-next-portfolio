@@ -3,7 +3,7 @@ import Header from "@/app/components/Header";
 export default async function Home() {
   const { data } = await fetch("http://localhost:3000/api/posts", {
     method: "post",
-  }).then((res) => res.json());
+  }).then((res) => res.json())
 
   return (
     <main className="flex flex-col justify-between max-w-full px-24 sm:px-0 w-full md:px-0 ">
